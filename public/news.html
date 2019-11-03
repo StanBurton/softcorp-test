@@ -7,21 +7,31 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .parse-app,
+      .news-block {
+        margin: 2rem auto 0 auto;
+        max-width: 700px;
+      }
+      .news-description {
+        word-wrap: break-word;
+      }
+      .btn {
+        user-select: initial;
+      }
+      .img-block {
+        display: flex;
+        flex-direction: column;
+      }
+      img {
+        width: 100%;
+        padding: 1rem 0rem;
+      }
+    </style>
     <title>Softcorp</title>
   </head>
   <body>
-    <div class="news-block">
-      <!-- <h1>TitleTitle TitleTitle Title TitleTitle TitleTitle TitleTitle Title TitleTitle TitleTitle TitleTitle Title TitleTitle TitleTitle TitleTitle Title TitleTitle</h1>
-      <div class="img-block">
-        <img
-          src="https://sun9-17.userapi.com/c830608/v830608487/14abb8/9y2ScbHQFBA.jpg"
-        />
-      </div>
-      <p class="lead news-description">
-        descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescription
-      </p> -->
-    </div>
+    <div class="news-block"></div>
     <script src="../dist/bundle.js"></script>
   </body>
 </html>

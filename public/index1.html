@@ -7,14 +7,31 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .parse-app,
+      .news-block {
+        margin: 2rem auto 0 auto;
+        max-width: 700px;
+      }
+      .news-description {
+        word-wrap: break-word;
+      }
+      .btn {
+        user-select: initial;
+      }
+      .img-block {
+        display: flex;
+        flex-direction: column;
+      }
+      img {
+        width: 100%;
+        padding: 1rem 0rem;
+      }
+    </style>
     <title>Softcorp</title>
   </head>
-
   <body>
-    <div class="parse-app">
-
-    </div>
-    <script src="../dist/bundle.js"></script>
+    <div class="parse-app"></div>
+    <script src="./dist/bundle.js"></script>
   </body>
 </html>

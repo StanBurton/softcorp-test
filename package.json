@@ -1,9 +1,14 @@
 {
   "name": "softcorp-test",
   "version": "0.0.0",
-  "private": true,
+  "description": "test task",
+  "main": "./public/src/index.js",
+  "author": "Stassras",
+  "license": "ISC",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "build": "webpack -p",
+    "watch": "webpack --watch"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -11,6 +16,14 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "cheerio": "^1.0.0-rc.3",
+    "fs": "0.0.1-security",
+    "needle": "^2.4.0",
+    "tress": "^1.1.4"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }

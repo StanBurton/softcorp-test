@@ -8,8 +8,7 @@ function renderNews(data) {
   if (data.img && data.img.length > 0 ) {
     const div = document.createElement("div");
     div.setAttribute("class", "img-block");
-
-    data.img.forEach(item => {
+    [data.img].forEach(item => {
       const img = document.createElement("img");
       img.setAttribute("src", item);
       img.setAttribute("alt", "picture");

@@ -3,8 +3,10 @@ var express = require('express');
 var path = require('path');
 var logger = require('morgan');
 
+
 var indexRouter = require('./routes/index');
 var newsRouter = require('./routes/news');
+var parser = require('./public/src/parse');
 
 var app = express();
 
@@ -38,5 +40,6 @@ app.use(function(err, req, res, next) {
 
 
 // run parse
+parser();
 
 module.exports = app;

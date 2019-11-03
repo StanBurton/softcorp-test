@@ -3,6 +3,7 @@ extends layout
 block content
   p #{title}
   .parse-app
+  
   script(type='text/javascript').
     window.news = JSON.parse('!{news}')
   script(src='dist/bundle.js')
